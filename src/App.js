@@ -39,9 +39,9 @@ class App extends Component {
           orders.map(order => {
             return (
               <li key={order.id} className="list-group-item">
-                <div className="list-item">{order.text}</div>
+                <span className="list-item">{order.text}</span>
                 <span
-                  className="list-item delete-button"
+                  className="list-item delete-button pull-right"
                   onClick={() => this.deleteOrder(order.id)}
                 >
                   &#x2715;

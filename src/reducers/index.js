@@ -14,10 +14,10 @@ const removeById = (state = [], id) => {
     return orders;
 }
 
-const randomizer = (state = []) => {
+/*const randomizer = (state = []) => {
     const orders = state.map((a) => [Math.random(), a]).sort((a, b) => a[0] - b[0]).map((a) => a[1]);
     return orders;
-}
+}*/
 
 
 const orders = (state = [], action) => {
