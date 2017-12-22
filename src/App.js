@@ -3,9 +3,59 @@ import logo from './logo.svg';
 import './App.css';
 import Opciones from './Opciones';
 import Main from './Main';
+import { connect } from 'react-redux';
+import { addOrder, deleteOrder } from './actions';
+
+
+
+
+
+
 
 
 class App extends Component {
+
+  //do-refactor
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: ''
+    }
+  }
+  addOrder() {
+    this.props.addOrder(this.state.text);
+  }
+
+  deleteOrder(id) {
+    this.props.deleteOrder(id);
+  }
+
+  renderOrders() {
+    const { orders } = this.props;
+    return (
+
+      <ul className="list-group " >
+        {
+          orders.map(order => {
+            return (
+              <li key={order.id} className="list-group-item">
+                <div className="list-item">{order.text}</div>
+                <span
+                  className="list-item delete-button"
+                  onClick={() => this.deleteOrder(order.id)}
+                >
+                  &#x2715;
+                </span>
+              </li>
+            )
+          }
+          )
+        }
+      </ul>
+    )
+  }
+
+
   render() {
     return (
       <div className="App">
@@ -14,7 +64,42 @@ class App extends Component {
           <h1 className="App-title">Welcome to Menu</h1>
         </header>
         <div className="container">
-          <Opciones />
+          <br></br>
+          <div className="row">
+            <div className="col-md-6">
+              <div className="form-inline">
+                <div className="form-group">
+                  <input
+                    className="form-control"
+                    placeholder="milaCompleta"
+                    onChange={event => this.setState({ text: event.target.value })}
+                  />
+                </div>
+                <br></br>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <Opciones />
+              <button type="button"
+                className="btn btn-success btn-block"
+                onClick={() => this.addOrder()}
+              >
+                Add Order
+            </button>
+              <br></br>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-md-3">
+            </div>
+            <div className="col-md-6">
+              {this.renderOrders()}
+            </div>
+            <div className="col-md-3">
+            </div>
+          </div>
+
           <Main />
         </div>
       </div>
@@ -22,4 +107,10 @@ class App extends Component {
   }
 }
 
-export default App;
+function mapStateToProps(state) {
+  return {
+    orders: state
+  }
+}
+
+export default connect(mapStateToProps, { addOrder, deleteOrder })(App);
