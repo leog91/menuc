@@ -7,6 +7,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducer from './reducers';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 const gitHubRepoName = 'menuccc';
 
@@ -17,7 +18,9 @@ const store = createStore(reducer);
 
 ReactDOM.render(
     <Provider store={store} >
-        <App />
+        <BrowserRouter>
+            <Route path="/" component={App} />
+        </BrowserRouter>
     </ Provider>,
     document.getElementById('root'));
 registerServiceWorker();

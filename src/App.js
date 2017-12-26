@@ -9,10 +9,6 @@ import { addOrder, deleteOrder } from './actions';
 
 
 
-
-
-
-
 class App extends Component {
 
   //do-refactor
@@ -100,8 +96,8 @@ class App extends Component {
                 className="btn btn-success btn-block"
                 onClick={() => this.addOrder()}
               >
-              <span className="glyphicon glyphicon-plus pull-left"> </span>
-                Add Order 
+                <span className="glyphicon glyphicon-plus pull-left"> </span>
+                Add Order
             </button>
               <br></br>
               <hr></hr>
