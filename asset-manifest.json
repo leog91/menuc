@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.4c24c929.css",
   "main.css.map": "static/css/main.4c24c929.css.map",
-  "main.js": "static/js/main.f91c4f76.js",
-  "main.js.map": "static/js/main.f91c4f76.js.map",
+  "main.js": "static/js/main.85ea020e.js",
+  "main.js.map": "static/js/main.85ea020e.js.map",
   "static/media/glyphicons-halflings-regular.eot": "static/media/glyphicons-halflings-regular.f4769f9b.eot",
   "static/media/glyphicons-halflings-regular.svg": "static/media/glyphicons-halflings-regular.89889688.svg",
   "static/media/glyphicons-halflings-regular.ttf": "static/media/glyphicons-halflings-regular.e18bbf61.ttf",
@@ -14,5 +14,7 @@
   "static/media/la-familia.jpg": "static/media/la-familia.e5bab85a.jpg",
   "static/media/logo.svg": "static/media/logo.5d5d9eef.svg",
   "static/media/los-nenes.jpg": "static/media/los-nenes.305f873e.jpg",
-  "static/media/los-rodriguez.jpg": "static/media/los-rodriguez.45067552.jpg"
+  "static/media/los-rodriguez.jpg": "static/media/los-rodriguez.45067552.jpg",
+  "static/media/nostimo-back.jpg": "static/media/nostimo-back.b43a979c.jpg",
+  "static/media/nostimo-front.jpg": "static/media/nostimo-front.318850ef.jpg"
 }
