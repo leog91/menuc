@@ -5,6 +5,7 @@ import Huracan from './huracan/Huracan';
 import LosRodriguez from './los-rodriguez/LosRodriguez';
 import LaFamilia from './la-familia/LaFamilia';
 import LosNenes from './los-nenes/LosNenes';
+import NostimoFresh from './nostimo-fresh/NostimoFresh';
 
 const Main = () => (
     <main>
@@ -15,6 +16,7 @@ const Main = () => (
                 <li><Link to="/losrodriguez">Los Rodriguez</Link></li>
                 <li><Link to="/lafamilia">La Familia</Link></li>
                 <li><Link to="/losnenes">Los Nenes</Link></li>
+                <li><Link to="/nostimofresh">Nostimo Fresh</Link></li>
             </ul>
 
             <hr />
@@ -24,6 +26,7 @@ const Main = () => (
             <Route path="/losrodriguez" component={LosRodriguez} />
             <Route path="/lafamilia" component={LaFamilia} />
             <Route path="/losnenes" component={LosNenes} />
+            <Route path="/nostimofresh" component={NostimoFresh} />
         </div>
     </main>
 
