@@ -6,6 +6,7 @@ import LosRodriguez from './los-rodriguez/LosRodriguez';
 import LaFamilia from './la-familia/LaFamilia';
 import LosNenes from './los-nenes/LosNenes';
 import NostimoFresh from './nostimo-fresh/NostimoFresh';
+import SanJose from './san-jose/SanJose';
 
 const Main = () => (
     <main>
@@ -17,6 +18,7 @@ const Main = () => (
                 <li><Link to="/lafamilia">La Familia</Link></li>
                 <li><Link to="/losnenes">Los Nenes</Link></li>
                 <li><Link to="/nostimofresh">Nostimo Fresh</Link></li>
+                <li><Link to="/sanjose">San José</Link></li>
             </ul>
 
             <hr />
@@ -27,6 +29,7 @@ const Main = () => (
             <Route path="/lafamilia" component={LaFamilia} />
             <Route path="/losnenes" component={LosNenes} />
             <Route path="/nostimofresh" component={NostimoFresh} />
+            <Route path="/sanjose" component={SanJose} />
         </div>
     </main>
 
