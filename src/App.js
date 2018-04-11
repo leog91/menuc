@@ -1,17 +1,18 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import Opciones from "./Opciones";
-import Main from "./Main";
-import { connect } from "react-redux";
-import { addOrder, deleteOrder } from "./actions";
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+import Opciones from './Opciones';
+import Main from './Main';
+
+import { connect } from 'react-redux';
+import { addOrder, deleteOrder } from './actions';
 
 class App extends Component {
   //do-refactor
   constructor(props) {
     super(props);
     this.state = {
-      text: ""
+      text: ''
     };
   }
   addOrder() {
@@ -87,6 +88,7 @@ class App extends Component {
                 Add Order
               </button>
               <br />
+
               <hr />
               {this.renderOrders()}
             </div>
