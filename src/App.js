@@ -6,14 +6,11 @@ import Main from './Main';
 
 import { connect } from 'react-redux';
 import { addOrder, deleteOrder } from './actions';
-
 class App extends Component {
   //do-refactor
   constructor(props) {
     super(props);
-    this.state = {
-      text: ''
-    };
+    this.state = { text: '' };
   }
   addOrder() {
     this.props.addOrder(this.state.text);
