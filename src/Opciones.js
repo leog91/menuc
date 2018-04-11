@@ -1,15 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Opciones = () => (
-    <header>
-        <nav>
-            <ul>
-                {
+  <header>
+    <nav>
+      <ul>{}</ul>
+    </nav>
+  </header>
+);
 
-                }
-            </ul>
-        </nav>
-    </header>
-)
-
-export default Opciones
+export default Opciones;

@@ -1,22 +1,18 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Opciones from './Opciones';
-import Main from './Main';
-import { connect } from 'react-redux';
-import { addOrder, deleteOrder } from './actions';
-
-
-
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Opciones from "./Opciones";
+import Main from "./Main";
+import { connect } from "react-redux";
+import { addOrder, deleteOrder } from "./actions";
 
 class App extends Component {
-
   //do-refactor
   constructor(props) {
     super(props);
     this.state = {
-      text: ''
-    }
+      text: ""
+    };
   }
   addOrder() {
     this.props.addOrder(this.state.text);
@@ -29,28 +25,22 @@ class App extends Component {
   renderOrders() {
     const { orders } = this.props;
     return (
-
-      <ul className="list-group " >
-        {
-          orders.map(order => {
-            return (
-              <li key={order.id} className="list-group-item">
-                <span className="list-item">{order.text}</span>
-                <span
-                  className="list-item  pull-right glyphicon glyphicon-remove"
-                  aria-hidden="true"
-                  onClick={() => this.deleteOrder(order.id)}
-                >
-                </span>
-              </li>
-            )
-          }
-          )
-        }
+      <ul className="list-group ">
+        {orders.map(order => {
+          return (
+            <li key={order.id} className="list-group-item">
+              <span className="list-item">{order.text}</span>
+              <span
+                className="list-item  pull-right glyphicon glyphicon-remove"
+                aria-hidden="true"
+                onClick={() => this.deleteOrder(order.id)}
+              />
+            </li>
+          );
+        })}
       </ul>
-    )
+    );
   }
-
 
   render() {
     return (
@@ -60,28 +50,22 @@ class App extends Component {
           <h1 className="App-title">Welcome to Menu</h1>
         </header>
         <div className="container">
-          <br></br>
+          <br />
           <div className="row">
             <div className="col-md-6">
               <div className="form-inline">
-
-                <br></br>
+                <br />
               </div>
             </div>
             <div className="col-md-6">
               <Opciones />
-
             </div>
           </div>
 
           <div className="row">
-            <div className="col-md-3">
-            </div>
-            <div className="col-md-6">
-
-            </div>
-            <div className="col-md-3">
-            </div>
+            <div className="col-md-3" />
+            <div className="col-md-6" />
+            <div className="col-md-3" />
           </div>
           <div className="row">
             <div className="col-md-2">
@@ -89,18 +73,21 @@ class App extends Component {
                 <input
                   className="form-control"
                   placeholder="milaCompleta"
-                  onChange={event => this.setState({ text: event.target.value })}
+                  onChange={event =>
+                    this.setState({ text: event.target.value })
+                  }
                 />
               </div>
-              <button type="button"
+              <button
+                type="button"
                 className="btn btn-success btn-block"
                 onClick={() => this.addOrder()}
               >
                 <span className="glyphicon glyphicon-plus pull-left"> </span>
                 Add Order
-            </button>
-              <br></br>
-              <hr></hr>
+              </button>
+              <br />
+              <hr />
               {this.renderOrders()}
             </div>
             <div className="col-md-10">
@@ -116,7 +103,7 @@ class App extends Component {
 function mapStateToProps(state) {
   return {
     orders: state
-  }
+  };
 }
 
 export default connect(mapStateToProps, { addOrder, deleteOrder })(App);
