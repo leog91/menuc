@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
-import huracanb from './huracan-back.jpg';
-import huracanf from './huracan-front.jpg';
+import huracanb from './huracan-back1.jpg';
+import huracanf from './huracan-front1.jpg';
 
 class Huracan extends Component {
   render() {
