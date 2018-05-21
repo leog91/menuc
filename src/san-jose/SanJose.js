@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import '../App.css';
-import sanjosea from '../sanjose-a.jpg';
-import sanjoseb from '../sanjose-b.jpg';
-import sanjosec from '../sanjose-c.jpg';
-import sanjosed from '../sanjose-d.jpg';
+import sanjosea from './sanjose-a.jpg';
+import sanjoseb from './sanjose-b.jpg';
+import sanjosec from './sanjose-c.jpg';
+import sanjosed from './sanjose-d.jpg';
 
 class SanJose extends Component {
   render() {
