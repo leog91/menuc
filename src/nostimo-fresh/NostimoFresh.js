@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import "../App.css";
-import nostimof from "../nostimo-front.jpg";
-import nostimob from "../nostimo-back.jpg";
+import React, { Component } from 'react';
+import '../App.css';
+import nostimof from '../nostimo-front.jpg';
+import nostimob from '../nostimo-back.jpg';
 
 class NostimoFresh extends Component {
   render() {

@@ -1,4 +1,4 @@
-import { ADD_ORDER, DELETE_ORDER } from "../constants";
+import { ADD_ORDER, DELETE_ORDER } from '../constants';
 
 export const addOrder = text => {
   const action = {

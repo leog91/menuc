@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import homef from "./home.png";
+import React, { Component } from 'react';
+import homef from './home.png';
 
 class Home extends Component {
   render() {

@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import "../App.css";
-import lafamilia from "../la-familia.jpg";
+import React, { Component } from 'react';
+import '../App.css';
+import lafamilia from '../la-familia.jpg';
 
 class LaFamilia extends Component {
   render() {

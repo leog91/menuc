@@ -1,4 +1,4 @@
-import { ADD_ORDER, DELETE_ORDER } from "../constants";
+import { ADD_ORDER, DELETE_ORDER } from '../constants';
 
 const order = action => {
   return {
@@ -9,7 +9,7 @@ const order = action => {
 
 const removeById = (state = [], id) => {
   const orders = state.filter(order => order.id !== id);
-  console.log("new reduced orders", orders);
+  console.log('new reduced orders', orders);
   return orders;
 };
 
@@ -24,11 +24,11 @@ const orders = (state = [], action) => {
   switch (action.type) {
     case ADD_ORDER:
       orders = [...state, order(action)];
-      console.log("orders as state", orders);
+      console.log('orders as state', orders);
       return orders;
     case DELETE_ORDER:
       orders = removeById(state, action.id);
-      console.log("orders as state", orders);
+      console.log('orders as state', orders);
       return orders;
     default:
       return state;

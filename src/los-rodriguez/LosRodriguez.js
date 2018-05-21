@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import "../App.css";
-import losrodriguez from "../los-rodriguez.jpg";
+import React, { Component } from 'react';
+import '../App.css';
+import losrodriguez from '../los-rodriguez.jpg';
 
 class LosRodriguez extends Component {
   render() {

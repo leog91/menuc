@@ -1,12 +1,12 @@
-import React from "react";
-import { Route, Link } from "react-router-dom";
-import Home from "./Home";
-import Huracan from "./huracan/Huracan";
-import LosRodriguez from "./los-rodriguez/LosRodriguez";
-import LaFamilia from "./la-familia/LaFamilia";
-import LosNenes from "./los-nenes/LosNenes";
-import NostimoFresh from "./nostimo-fresh/NostimoFresh";
-import SanJose from "./san-jose/SanJose";
+import React from 'react';
+import { Route, Link } from 'react-router-dom';
+import Home from './Home';
+import Huracan from './huracan/Huracan';
+import LosRodriguez from './los-rodriguez/LosRodriguez';
+import LaFamilia from './la-familia/LaFamilia';
+import LosNenes from './los-nenes/LosNenes';
+import NostimoFresh from './nostimo-fresh/NostimoFresh';
+import SanJose from './san-jose/SanJose';
 
 const Main = () => (
   <main>
